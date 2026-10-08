@@ -1,0 +1,21 @@
+# Conda environment for this repo (CUDA wheels still come from pip; see install.sh).
+# Create/update:
+#   conda env create -f environment.yml
+#   conda activate 3dgeneration
+#   bash install.sh basic    # or: bash scripts/bootstrap_env.sh
+#
+name: 3dgeneration
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - pip>=24.0
+  - setuptools>=61
+  - wheel
+  - git
+  - ninja
+  - cmake
+  - ffmpeg
+  # Newer libstdc++ avoids ABI surprises with PyTorch / manylinux CUDA wheels vs old conda bases
+  - libstdcxx-ng>=13
+  - ca-certificates

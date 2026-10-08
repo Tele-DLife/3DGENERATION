@@ -1,0 +1,17 @@
+3DGENERATION
+Copyright (c) 2025-2026 3DGENERATION Contributors.
+
+This project is based on and contains modifications to EmbodiedGen, originally
+developed by Horizon Robotics and the EmbodiedGen contributors:
+
+    https://github.com/HorizonRobotics/EmbodiedGen
+
+Copyright and attribution notices originating from EmbodiedGen are retained in
+the relevant source files. Unless a file or component states otherwise,
+3DGENERATION's original contributions and modifications are made available
+under the Apache License, Version 2.0.
+
+This project also interfaces with or installs third-party software and model
+artifacts that remain governed by their own licenses. Those materials are not
+relicensed under the 3DGENERATION Apache-2.0 license. See
+THIRD_PARTY_NOTICES.md and the license files contained in each submodule.

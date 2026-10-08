@@ -1,0 +1,13 @@
+# Modified by 3DGENERATION Contributors, 2025-2026.
+# Submodules remain governed by their own licenses; see THIRD_PARTY_NOTICES.md.
+
+[submodule "thirdparty/TRELLIS"]
+	path = thirdparty/TRELLIS
+	url = https://github.com/microsoft/TRELLIS.git
+	branch = main
+	shallow = true
+[submodule "thirdparty/sam3d"]
+	path = thirdparty/sam3d
+	url = https://github.com/HochCC/sam-3d-objects.git
+	branch = main
+	shallow = true

@@ -1,0 +1,122 @@
+build/
+dummy/
+!scripts/build
+builddir/
+conan-deps/
+distribute/
+lib/
+bin/
+dist/
+deps/*
+docs/build
+python/dist/
+docs/index.rst
+python/MANIFEST.in
+*.egg-info
+*.pyc
+*.pyi
+*.json
+*.bak
+*.zip
+wheels*/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+.cproject
+.project
+.settings/
+*.db
+*.bak
+.arcconfig
+.vscode/
+
+# files
+*.pack
+*.pcd
+*.html
+*.ply
+*.mp4
+# node
+node_modules
+
+# local files
+log.md
+build.sh
+__pycache__/
+output*
+*.log
+scripts/tools/
+weights
+apps/sessions/
+apps/assets/
+embodied_gen/utils/gpt_api_keys.local.yaml
+
+# --- Keep only the primary UI entry(s) under apps/ ---
+# We run:
+# - apps/app_demo_CHN.py (Chinese UI)
+# - apps/app_demo_Eng.py (English UI)
+# - apps/app_demo_pure.py (local/demo)
+# Everything else named app_demo_*.py is treated as optional and ignored by default.
+apps/app_demo_*.py
+!apps/app_demo_CHN.py
+!apps/app_demo_Eng.py
+!apps/app_demo_pure.py
+
+# Optional test helpers under apps/
+apps/test_*.py
+
+# Local scratch images accidentally added at repo root
+3d.png
+cousin.png
+
+# Larger than 1MB
+docs/assets/real2sim_mujoco.gif
+docs/assets/scene3d.gif
+
+# --- Local caches, checkpoints, and large assets (keep `git pull` / clones light) ---
+# Only the repo-root `models/` tree (prefetch caches and model checkpoints).
+# Do NOT use a bare `models/` pattern — it would ignore `embodied_gen/models/` (Python package).
+/models/
+/logs/
+
+# Backups & archives (repo already ignores *.zip)
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# ML weights / exports
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.pb
+*.h5
+*.hdf5
+*.npz
+
+# Large 3D / DCC scene assets (version small test meshes explicitly if needed)
+*.glb
+*.gltf
+*.fbx
+*.blend
+*.usd
+*.usda
+*.usdc
+
+# Exported / scratch room or demo outputs at repo root
+/Simple_Room/

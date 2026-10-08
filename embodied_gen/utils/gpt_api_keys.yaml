@@ -1,0 +1,5 @@
+gpt-4o:
+  api_key: xxx
+
+qwen2.5-vl:
+  api_key: xxx

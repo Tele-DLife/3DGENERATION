@@ -1,0 +1,16 @@
+#
+# Compatibility constraints for optional/extra packages.
+# This file is included from the top of requirements.txt (-c install/constraints_compat.txt).
+#
+# We intentionally do NOT pin torch/torchvision/xformers here because the repo's
+# installation uses CUDA-specific torch wheels (e.g. 2.4.0+cu118) and a strict
+# constraint like torch==2.4.0 would conflict with local-version wheels.
+#
+# Keep numpy<2 for transformers/diffusers compatibility and keep pillow/gradio
+# compatible.
+numpy==1.26.4
+pillow>=10,<12
+opencv-python>=4.5,<4.12
+opencv-python-headless>=4.5,<4.12
+
+
